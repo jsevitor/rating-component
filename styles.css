@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+	/* Colors */
+	/* Primary */
+	--orange: hsl(25, 97%, 53%);
+	
+	/* Neutral */
+	--white: hsl(0, 0%, 100%);
+	--lightGrey: hsl(217, 12%, 63%);
+	--mediumGrey: hsl(216, 12%, 54%);
+	--darkBlue: hsl(213, 19%, 18%);
+	--veryDarkBlue: hsl(216, 12%, 8%);
+	--bg: rgb(255, 255, 255, 0.08);
+}
+
+* {
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: var(--veryDarkBlue);
+	color: var(--white);
+	height: 98%;
+}
+
+.container-bg {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--veryDarkBlue);
+}
+
+.container-bg .container {
+	width: 22rem;
+	height: 21rem;
+	border-radius: 1rem;
+	padding: 1rem 2rem;
+	display: block;
+	background-color: var(--darkBlue);
+}
+
+.container-bg .container div {
+	margin: 1rem 0;
+}
+
+.container-bg .container .star {
+	background-color: var(--bg);
+	border-radius: 100%;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-bg .container .star img {
+	height: 1rem;
+}
+
+.container-bg .container .content h2 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.container-bg .container .content p {
+	font-size: 0.8rem;
+	color: var(--lightGrey);
+}
+
+.container-bg .container .rate {
+	display: flex;
+	justify-content: space-between;
+	color: var(--lightGrey);
+}
+
+.container-bg .container .rate .value {
+	background-color: var(--bg);
+	border-radius: 100%;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.container-bg .container .rate .value:hover {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+.container-bg .container .rate .value:active,
+.container-bg .container .rate .value:focus {
+	outline: none;
+	background-color: var(--lightGrey);
+	color: var(--white);
+	
+}
+
+.container-bg .container .btn {
+	width: 100%;
+	height: 2.5rem;
+	padding: 0 0.8rem;
+	
+	border-radius: 2rem;
+	background-color: var(--orange);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+.container-bg .container .btn:hover {
+	background: var(--white);
+	cursor: pointer;
+	color: var(--orange);
+}
+
+#thanks {
+	display: none;
+}
+
+.container-bg #thanks {
+	display: block;
+	text-align: center;
+}
+.container-bg .container .image-thanks img {
+	height: 6rem;
+}
+
+.container-bg .container .selection {
+	background-color: var(--bg);
+	border-radius: 1rem;
+	padding: 0.3rem 0;
+	width: 10rem;
+	margin: 0 auto;
+}
+
+.container-bg .container .selection span {
+	color: var(--orange);
+	font-size: 0.9rem;
+}
+
+.container-bg .container .thanks h1 {
+	font-size: 1.4rem;
+	margin: 1.5rem 0 0.5rem 0;
+	
+	font-weight: normal;
+}
+
+.container-bg .container .thanks p {
+	font-size: 0.8rem;
+	color: var(--lightGrey);
+	line-height: 1.2rem;
+}
+
+
+
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+
+.attribution a { 
+	font-size: 11px; 
+	color: hsl(228, 45%, 44%); 
+}

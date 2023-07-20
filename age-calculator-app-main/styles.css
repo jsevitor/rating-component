@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+	/* Colors */
+	/* Primary */
+	--purple: hsl(259, 100%, 65%);
+	--lightRed: hsl(0, 100%, 67%);
+	
+	/* Neutral */
+	--white: hsl(0, 0%, 100%);
+	--offWhite: hsl(0, 0%, 94%);
+	--lightGrey: hsl(0, 0%, 86%);
+	--smokeyGrey: hsl(0, 1%, 44%);
+	--smokey: rgb(112, 112, 112, 0.4);
+	--offBlack: hsl(0, 0%, 8%);
+}
+
+* {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: var(--offWhite);
+	height: 98%;
+}
+
+.container-bg {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--offWhite);
+}
+
+.container-bg .container {
+	width: 45rem;
+	height: 35rem;
+	border-radius: 1.5rem 1.5rem 11rem 1.5rem;
+	padding: 3rem 3rem;
+	display: block;
+	background-color: var(--white);
+}
+
+.container-bg .container .form {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid var(--smokey);
+	padding-bottom: 3rem;
+	margin-bottom: 2rem;
+}
+
+.container-bg .container .form label {
+	color: var(--smokeyGrey);
+	font-size: 0.8rem;
+	letter-spacing: 0.3rem;
+}
+
+.container-bg .container .form #mm {
+	margin-left: 7.3rem;
+}
+
+.container-bg .container .form #yyyy {
+	margin-left: 5.2rem;
+}
+
+
+.container-bg .container .form input {
+	width: 8rem;
+	height: 4rem;
+	border: 1px solid var(--smokey);
+	border-radius: 0.4rem;
+	margin-right: 1.8rem;
+	margin-top: 0.5rem;
+	font-size: 2rem;
+	padding: 0 1.5rem;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+ }
+ 
+ 
+
+.container-bg .container .button {
+	background-color: var(--purple);
+	border-radius: 100%;
+	width: 4.5rem;
+	height: 4.5rem;
+	margin: 2rem 0 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 15.5rem; 
+	left: 63rem;
+}
+
+.container-bg .container .button:hover {
+	background-color: var(--offBlack);
+}
+
+.container-bg .container .button img {
+	height: 2.5rem;
+}
+
+.container-bg .container .results {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-bg .container .results .text,
+.container-bg .container .results .number {
+	color: var(--offBlack);
+	font-size: 6rem;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 6rem;
+}
+
+.container-bg .container .results .number {
+	color: var(--purple);
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+
+.attribution a { 
+	font-size: 11px; 
+	color: hsl(228, 45%, 44%); 
+}
